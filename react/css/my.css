@@ -1,0 +1,90 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+#example{
+	width: 100%;
+	height: 100%;
+}
+.login{
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 30%;
+	min-width: 300px;
+	min-height: 300px;
+	border: 1px solid #31B0D5;
+	border-radius: 5px;
+	padding: 20px;
+	background:#FFFFFF;
+	background-color: rgba(0,0,0,0.3);
+	-moz-box-shadow: 10px 10px 5px #737373;
+	-webkit-box-shadow: 10px 10px 5px #737373;
+	box-shadow: 10px 10px 5px #737373;
+	position: absolute;
+	left: 35%;
+    top: 25%;
+}
+.login h3{
+	color: #285E8E;
+}
+.login .input-group{
+	margin-top: 20px;
+}
+.login .input-group:nth-child(3){
+	margin-bottom: 20px;
+}
+body{
+	background:url('../img/foreground.png') 5px 5px,url("../img/midground.png") 1050px 750px,url("../img/background.png") 1000px -50px;
+
+	-moz-animation-name:bgmove;
+	-moz-animation-duration:30s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0;
+	-moz-animation-iteration-count:infinite;
+		
+	-webkit-animation-name:bgmove;
+	-webkit-animation-duration:30s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0;
+	-webkit-animation-iteration-count:infinite;
+		
+	animation-name:bgmove;
+	animation-duration:30s;
+	animation-timing-function:linear;
+	animation-delay:0;
+	animation-iteration-count:infinite;
+}
+@-moz-keyframes bgmove{
+    0%{
+        background:url('../img/foreground.png') 5px 5px,url("../img/midground.png") 1050px 750px,url("../images/background.png") 1000px -50px;
+    }
+    100%{
+        background:url('../img/foreground.png') 2005px 1005px,url("../img/midground.png") 50px -250px,url("../img/background.png") 0 950px;
+
+    }
+}
+@-webkit-keyframes bgmove{
+    0%{
+        background:url('../img/foreground.png') 5px 5px,url("../img/midground.png") 1050px 750px,url("../img/background.png") 1000px -50px;
+    }
+    100%{
+        background:url('../img/foreground.png') 2005px 1005px,url("../img/midground.png") 50px -250px,url("../img/background.png") 0 950px;
+    }
+}
+.foot{
+	display: block;
+	margin: 10px;
+}
+.foot a{
+	color: white;
+	cursor: pointer;
+	text-underline: none;
+}
+.foot a:nth-child(2){
+	float: right;
+}
